@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>panel.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>panel</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- asi -->
+  <model>
+    <path>Aircraft/Quickie/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m>  0.136 </x-m>
+      <y-m> -0.348 </y-m>
+      <z-m>  0.117 </z-m>
+    </offsets>
+  </model>
+
+  <!-- ai -->
+  <model>
+    <path>Aircraft/Quickie/Models/Interior/Panel/Instruments/ai/ai.xml</path>
+    <offsets>
+      <x-m>  0.129 </x-m>
+      <y-m> -0.250 </y-m>
+      <z-m>  0.117 </z-m>
+    </offsets>
+  </model>
+
+  <!-- alt -->
+  <model>
+    <path>Aircraft/Quickie/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m>  0.136 </x-m>
+      <y-m> -0.150 </y-m>
+      <z-m>  0.117 </z-m>
+    </offsets>
+  </model>
+
+  <!-- ki206 -->
+  <model>
+    <path>Aircraft/Quickie/Models/Interior/Panel/Instruments/ki206/ki206.xml</path>
+    <offsets>
+      <x-m>  0.136 </x-m>
+      <y-m> -0.057 </y-m>
+      <z-m>  0.117 </z-m>
+    </offsets>
+  </model>
+
+  <!-- rpm -->
+  <model>
+    <path>Aircraft/Quickie/Models/Interior/Panel/Instruments/rpm/rpm.xml</path>
+    <offsets>
+      <x-m>  0.136 </x-m>
+      <y-m> -0.348 </y-m>
+      <z-m>  0.024 </z-m>
+    </offsets>
+  </model>
+
+  <!-- hdg -->
+  <model>
+    <path>Aircraft/Quickie/Models/Interior/Panel/Instruments/hdg/hdg.xml</path>
+    <offsets>
+      <x-m>  0.136 </x-m>
+      <y-m> -0.250 </y-m>
+      <z-m>  0.024 </z-m>
+    </offsets>
+  </model>
+
+  <!-- vsi -->
+  <model>
+    <path>Aircraft/Quickie/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m>  0.136 </x-m>
+      <y-m> -0.150 </y-m>
+      <z-m>  0.024 </z-m>
+    </offsets>
+  </model>
+
+  <!-- adf -->
+  <model>
+    <path>Aircraft/Quickie/Models/Interior/Panel/Instruments/adf/adf.xml</path>
+    <offsets>
+      <x-m>  0.136 </x-m>
+      <y-m> -0.057 </y-m>
+      <z-m>  0.024 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>
+

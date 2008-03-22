@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>interior.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>interieur</object-name>
+    <object-name>sieges</object-name>
+
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- Tableau de bord -->
+  <model>
+    <path>Aircraft/Quickie/Models/Interior/Panel/panel.xml</path>
+    <offsets>
+      <x-m> -0.421 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.139 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>

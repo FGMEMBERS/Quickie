@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <sim include="Nasal/views.xml">
+
+    <author>BARANGER Emmanuel (3D/FDM)</author>
+    <aircraft-version>0.1</aircraft-version>
+    <status>Alpha</status>
+
+    <fuel-fraction>1.0</fuel-fraction>
+
+    <startup>
+      <splash-texture>Aircraft/Quickie/quickie2-splash.png</splash-texture>
+    </startup>
+
+    <sound>
+      <path archive="y">Aircraft/Quickie/Sounds/quickie2-sound.xml</path>
+    </sound>
+
+    <model>
+      <path archive="y">Aircraft/Quickie/Models/quickie2.xml</path>
+    </model>
+
+    <multiplay>
+      <chat_display>1</chat_display>
+    </multiplay> 
+
+    <help>
+      <title>Rutan Quickie 2</title>
+      <key>
+        <name>d</name>
+        <desc>Open/Close canopy</desc>
+      </key>
+      <line>______________________________________________</line>
+    </help>
+
+  </sim>
+ 
+  <input>
+    <keyboard include="Nasal/quickie2-keyboard.xml"/>
+  </input>
+ 
+  <nasal>
+    <quickie>
+      <file>Aircraft/Quickie/Nasal/doors.nas</file>
+      <file>Aircraft/Quickie/Nasal/light.nas</file>
+    </quickie>
+  </nasal>
+  
+</PropertyList>
