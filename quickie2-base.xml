@@ -20,10 +20,21 @@
 
     <model>
       <path archive="y">Aircraft/Quickie/Models/quickie2.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
     </model>
 
     <multiplay>
       <chat_display>1</chat_display>
+      <generic>
+        <int type="int" n="0">0</int>
+        <int type="int" n="1">0</int>
+        <int type="int" n="2">0</int>
+        <int type="int" n="3">0</int>
+        <int type="int" n="4">0</int>
+        <int type="int" n="5">0</int>
+      </generic>
     </multiplay> 
 
     <help>
@@ -35,8 +46,18 @@
       <line>______________________________________________</line>
     </help>
 
+    <menubar include="Dialogs/quickie2-menu.xml"/>
+
   </sim>
- 
+
+  <controls>
+    <engines>
+      <engine>
+        <mixture archive="y"> 0.65 </mixture>
+      </engine>
+    </engines>
+  </controls> 
+
   <input>
     <keyboard include="Nasal/quickie2-keyboard.xml"/>
   </input>
@@ -45,6 +66,9 @@
     <quickie>
       <file>Aircraft/Quickie/Nasal/doors.nas</file>
       <file>Aircraft/Quickie/Nasal/light.nas</file>
+      <file>Aircraft/Quickie/Nasal/quickie2.nas</file>
+      <file>Aircraft/Quickie/Nasal/liveries.nas</file>
+      <file>Aircraft/Quickie/Nasal/immat.nas</file>
     </quickie>
   </nasal>
   
