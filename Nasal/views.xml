@@ -1,8 +1,8 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
-  <chase-distance-m type="double" archive="y">-30.0</chase-distance-m>
+  <chase-distance-m type="double" archive="y">-15.0</chase-distance-m>
 
   <view n="100">
     <name>Passanger Seat View</name>
@@ -42,7 +42,7 @@
       <x-offset-m archive="y"> -0.263 </x-offset-m>	<!-- Right -->
       <y-offset-m archive="y">  0.371 </y-offset-m>	<!-- Up    -->
       <z-offset-m archive="y"> -0.739 </z-offset-m>	<!-- Back  -->
-      <pitch-offset-deg>-5</pitch-offset-deg>
+      <pitch-offset-deg>-8</pitch-offset-deg>
       <default-field-of-view-deg>55</default-field-of-view-deg>
     </config>
   </view>
@@ -82,24 +82,5 @@
       <target-z-offset-m archive="y" type="double">0</target-z-offset-m>
     </config>
   </view>
-
-  <viewer>
-    <eye>
-      <latitude-deg type="double">0</latitude-deg>
-      <longitude-deg type="double">0</longitude-deg>
-      <altitude-ft type="double">0</altitude-ft>
-      <heading-deg type="double">0</heading-deg>
-      <pitch-deg type="double">0</pitch-deg>
-      <roll-deg type="double">0</roll-deg>
-    </eye>
-    <target>
-      <latitude-deg type="double">0</latitude-deg>
-      <longitude-deg type="double">0</longitude-deg>
-      <altitude-ft type="double">0</altitude-ft>
-      <heading-deg type="double">0</heading-deg>
-      <pitch-deg type="double">0</pitch-deg>
-      <roll-deg type="double">0</roll-deg>
-    </target>
-  </viewer>
 
 </PropertyList>

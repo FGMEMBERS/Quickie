@@ -1,4 +1,4 @@
-English/FranÃ§ais
+English/Français
 
 [English]
 ----------
@@ -6,8 +6,8 @@ English/FranÃ§ais
 A little history
 ================
 
-Skyranger
-=========
+Rutan Quickie 2
+===============
 
 Manufacturer                  : 
 Type                          : 
@@ -29,31 +29,31 @@ Thanks
 
 ===============
 BARANGER Emmanuel
-November, 05, 2007. 
+November, 05, 2007.
 
 http://helijah.free.fr/flightgear/hangar.htm
 embaranger@free.fr
 
 
-[FranÃ§ais]
+[Français]
 ----------
 
 Un peu d'histoire
 =================
 
-Skyranger
-=========
+Rutan Quickie 2
+===============
 
 Constructeur                  : 
 Type                          : 
-AnnÃ©e                         : 
+Année                         : 
 Moteur                        : 
 Envergure                     : 
 Longueur                      : 
 Hauteur                       : 
-Poids max au dÃ©collage        : 
-Vitesse estimÃ©e de croisiÃ¨re  : 
-Autonomie estimÃ©e             : 
+Poids max au décollage        : 
+Vitesse estimée de croisière  : 
+Autonomie estimée             : 
 Equipage                      : 
 
 
