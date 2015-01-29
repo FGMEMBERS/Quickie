@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <!-- Left -->
+  <model>
+    <path>Aircraft/Quickie/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -2.22629 </x-m>
+      <y-m> -0.34331 </y-m>
+      <z-m> -0.34927 </z-m>
+      <roll-deg> -25 </roll-deg>
+      <pitch-deg> 50 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- Right -->
+  <model>
+    <path>Aircraft/Quickie/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -2.22629 </x-m>
+      <y-m>  0.34331 </y-m>
+      <z-m> -0.34927 </z-m>
+      <roll-deg>  25 </roll-deg>
+      <pitch-deg> 50 </pitch-deg>
+    </offsets>
+  </model>
+  
+</PropertyList>

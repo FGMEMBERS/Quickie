@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <gear>
+    <brake-parking type="double">1</brake-parking>
+  </gear>
+  
+  <lighting>
+    <instrument-lights type="bool">false</instrument-lights>
+    <nav-lights type="bool">false</nav-lights>
+    <taxi-lights type="bool">false</taxi-lights>
+    <strobe-lights type="bool">false</strobe-lights>
+    <landing-lights type="bool">false</landing-lights>
+    <luminosite-lights type="float">2</luminosite-lights>
+    <floods-lights type="float">1.5</floods-lights>
+    <panel-dim type="float">1.5</panel-dim>
+  </lighting>
+  
+  <electric>
+    <battery-switch>0</battery-switch>
+    <generator>0</generator>
+    <engines>
+      <engine n="0">
+        <fuel-pump>0</fuel-pump>
+      </engine>
+    </engines>
+  </electric>
+  
+  <engines>
+    <engine>
+      <mixture archive="y"> 0.65 </mixture>
+    </engine>
+  </engines>
+  
+  <flight>
+    <elevator-trim>0</elevator-trim>
+  </flight>
+  
+</PropertyList>
