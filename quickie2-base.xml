@@ -1,70 +1,77 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
-
-  <sim include="Nasal/views.xml">
-
-    <author>BARANGER Emmanuel (3D/FDM)</author>
-    <aircraft-version>0.1</aircraft-version>
+  
+  <sim include="Systems/views.xml">
+    
+    <description>Rutan Quickie 2 (YASim)</description>
+    <author>Emmanuel BARANGER (3D/FDM)</author>
+    <aircraft-version>0.2</aircraft-version>
     <status>Alpha</status>
-
+    
     <fuel-fraction>1.0</fuel-fraction>
-
+    
     <startup>
       <splash-texture>Aircraft/Quickie/quickie2-splash.png</splash-texture>
     </startup>
-
+    
     <sound>
       <path archive="y">Aircraft/Quickie/Sounds/quickie2-sound.xml</path>
     </sound>
-
+    
     <model>
       <path archive="y">Aircraft/Quickie/Models/quickie2.xml</path>
       <livery>
         <file type="string">default</file>
       </livery>
     </model>
-
+    
     <multiplay>
       <chat_display>1</chat_display>
-      <generic>
-        <int type="int" n="0">0</int>
-        <int type="int" n="1">0</int>
-        <int type="int" n="2">0</int>
-        <int type="int" n="3">0</int>
-        <int type="int" n="4">0</int>
-        <int type="int" n="5">0</int>
+      <generic> 
+        <int   n="0"  type="int">  0 </int>                                         <!-- 0 immat -->
+        <int   n="1"  type="int">  0 </int>                                         <!-- 1 immat -->
+        <int   n="2"  type="int">  0 </int>                                         <!-- 2 immat -->
+        <int   n="3"  type="int">  0 </int>                                         <!-- 3 immat -->
+        <int   n="4"  type="int">  0 </int>                                         <!-- 4 immat -->
+        <int   n="5"  type="int">  0 </int>                                         <!-- 5 immat -->
+        <int   n="6"  type="bool"> 1 </int>                                         <!-- 6 -->
+        <int   n="7"  type="int">  0 </int>                                         <!-- 7  -->
+        <int   n="8"  alias="/systems/electrical/outputs/nav-lights">  0 </int>     <!-- 8 nav-lights -->
+        <int   n="9"  alias="/sim/model/lights/beacon/state">  false </int>         <!-- 9 strobe-lights -->
+        <float n="0"  alias="/sim/model/door-positions/crew/position-norm"/>
+        <float n="1"  alias="/sim/model/door-positions/passenger/position-norm"/>
+        <float n="2"  alias="/position/gear-agl-m"> 0 </float>                      <!-- altitude for MP shadow -->
+        <float n="3"  alias="/position/altitude-ft"> 0 </float>                     <!-- altitude for Smoke/Trail -->
+        <float n="4"  alias="/engines/engine[0]/rpm"/>
+        <float n="5"  alias="/engines/engine[0]/cranking"/>
+        <float n="6"  alias="/gear/gear[0]/wow/"/>
+        <float n="7"  alias="/gear/gear[1]/wow/"/>
+        <float n="8"  alias="/gear/gear[2]/wow/"/>
+        <float n="9"  alias="/gear/gear[0]/rollspeed-ms"/>
+        <float n="10" alias="/gear/gear[1]/rollspeed-ms"/>
+        <float n="11" alias="/gear/gear[2]/rollspeed-ms"/>
+        <!-- For Bombable -->
+        <int type="int" n="10" alias="controls/armament/trigger">0</int>
+        <string n="9" type="string" />
       </generic>
-    </multiplay> 
-
-    <help>
-      <title>Rutan Quickie 2</title>
-      <key>
-        <name>d</name>
-        <desc>Open/Close canopy</desc>
-      </key>
-      <line>______________________________________________</line>
-    </help>
-
+    </multiplay>
+    
+    <help include="Systems/help.xml"/>
+    
     <menubar include="Dialogs/quickie2-menu.xml"/>
-
+    
   </sim>
-
-  <controls>
-    <engines>
-      <engine>
-        <mixture archive="y"> 0.65 </mixture>
-      </engine>
-    </engines>
-  </controls> 
-
-  <input>
-    <keyboard include="Nasal/quickie2-keyboard.xml"/>
-  </input>
- 
+  
+  <input include="Systems/quickie2-keyboard.xml"/>
+  
+  <controls include="Systems/controls.xml"/>
+  
   <nasal>
-    <quickie>
+    <doors>
       <file>Aircraft/Quickie/Nasal/doors.nas</file>
+    </doors>
+    <quickie>
       <file>Aircraft/Quickie/Nasal/light.nas</file>
       <file>Aircraft/Quickie/Nasal/quickie2.nas</file>
       <file>Aircraft/Quickie/Nasal/liveries.nas</file>
