@@ -1,124 +1,163 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
-<!-- Rutan Quickie 2 : 2008 Emmanuel BARANGER -->
+<!-- Rutan Quickie 2 : 2008 Emmanuel BARANGER
+   
+     sources          : http://en.wikipedia.org/wiki/QAC_Quickie_Q2
 
-<airplane mass="578" >
-
+     Year             :  1980
+     Wingspan         :  16 ft  8 in ( 5.08 m   )
+     Length           :  19 ft 10 in ( 6.05 m   )
+     Height           :   4 ft  5 in ( 1.35 m   )
+     Empty weight     : 490 lb       (  222 kg  )
+     Engine           : 1 Revmaster 2100-DQ converted auto-engine ( 64 hp at 3200 rpm )
+     Max speed        : 290 km/h     (  157 kt  )
+     Cruise speed     : 225 km/h     (  122 kt  )
+-->
+<airplane mass="420" version="YASIM_VERSION_CURRENT">
+  
   <approach speed="65" aoa="4" fuel="0.2" >
     <control-setting axis="/controls/engines/engine[0]/throttle" value="0.2"/>
-    <control-setting axis="/controls/engines/engine[0]/mixture" value="0.65"/>  <!-- Ground adjustment only -->
+    <control-setting axis="/controls/engines/engine[0]/mixture" value="0.65"/> <!-- Ground adjustment only -->
   </approach>
   
-  <cruise speed="155" alt="6000" fuel="0.5" >
+  <cruise speed="122" alt="6000" fuel="0.5" >
     <control-setting axis="/controls/engines/engine[0]/throttle" value="1.0"/>
-    <control-setting axis="/controls/engines/engine[0]/mixture" value="0.65"/>  <!-- Ground adjustment only -->
+    <control-setting axis="/controls/engines/engine[0]/mixture" value="0.65"/> <!-- Ground adjustment only -->
   </cruise>
   
   <cockpit x="0.769" y="0.236" z="0.344" />
-
-  <fuselage ax="3.025" ay="0" az="0.012" bx="-2.612" by="0" bz="-0.033" width="1.177" taper="0.50" midpoint="0.50" />
   
-  <wing x="1.80" y="0.440" z="-0.313"
-        chord="0.722" 
-        length="2.00"
-        taper="0.68" 
-        dihedral="-5" 
-        sweep="3"
-        camber="0.05">
-        <stall aoa="16" width="3" peak="1.5" />
-        <flap0 start="0.055" end="0.946" lift="1.6" drag="1.2"/>       
-        <control-input control="FLAP0" axis="/controls/flight/elevator" invert="true"/>
-        <control-input control="FLAP0" axis="/controls/flight/elevator-trim" invert="true"/>      
-        <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
-  </wing>
-
-  <hstab x="0.181" y="0.440" z="0.330"  
+  <!-- Noze -->
+  <fuselage ax=" 2.736" ay=" 0.000" az=" 0.012" bx=" 2.706" by=" 0.000" bz=" 0.012" width="0.234" taper="0.90" midpoint="1"/>
+  <!-- Gauche -->  
+  <fuselage ax=" 2.706" ay=" 0.000" az=" 0.012" bx=" 2.431" by=" 0.182" bz="-0.079" width="0.475" taper="0.40" midpoint="1"/>
+  <fuselage ax=" 2.552" ay=" 0.182" az="-0.079" bx=" 1.588" by=" 0.230" bz="-0.084" width="0.630" taper="0.70" midpoint="1"/>
+  <fuselage ax=" 1.588" ay=" 0.230" az="-0.084" bx=" 0.626" by=" 0.214" bz="-0.011" width="0.630" taper="1.00" midpoint="1"/>
+  <fuselage ax=" 0.626" ay=" 0.214" az="-0.011" bx="-0.215" by=" 0.168" bz=" 0.143" width="0.630" taper="0.90" midpoint="0"/>
+  <fuselage ax="-0.142" ay=" 0.168" az=" 0.143" bx="-2.580" by=" 0.000" bz="-0.027" width="0.550" taper="0.10" midpoint="0"/>
+  
+  <!-- Droite -->  
+  <fuselage ax=" 2.706" ay=" 0.000" az=" 0.012" bx=" 2.431" by="-0.182" bz="-0.079" width="0.475" taper="0.40" midpoint="1"/>
+  <fuselage ax=" 2.552" ay="-0.182" az="-0.079" bx=" 1.588" by="-0.230" bz="-0.084" width="0.630" taper="0.70" midpoint="1"/>
+  <fuselage ax=" 1.588" ay="-0.230" az="-0.084" bx=" 0.626" by="-0.214" bz="-0.011" width="0.630" taper="1.00" midpoint="1"/>
+  <fuselage ax=" 0.626" ay="-0.214" az="-0.011" bx="-0.215" by="-0.168" bz=" 0.143" width="0.630" taper="0.90" midpoint="0"/>
+  <fuselage ax="-0.142" ay="-0.168" az=" 0.143" bx="-2.580" by=" 0.000" bz="-0.027" width="0.550" taper="0.10" midpoint="0"/>
+  
+  <!-- Cockpit -->
+  <fuselage ax=" 1.521" ay=" 0.000" az="-0.087" bx=" 0.806" by=" 0.000" bz=" 0.096" width="0.930" taper="0.80" midpoint="1"/>
+  <fuselage ax=" 0.898" ay=" 0.000" az=" 0.096" bx=" 0.069" by=" 0.000" bz=" 0.139" width="0.930" taper="0.80" midpoint="0"/>
+  <fuselage ax=" 0.069" ay=" 0.000" az=" 0.139" bx="-0.760" by=" 0.000" bz=" 0.107" width="0.730" taper="0.60" midpoint="0"/>
+  
+  <wing x="0.181" y="0.440" z="0.330"  
          chord="0.722" 
-         length="2.00"
+         length="2.10"
          taper="0.68" 
          dihedral="5" 
          sweep="3"
-         camber="0.05">
-         <stall aoa="24" width="3" peak="1.5"/>
-         <flap1 start="0.061" end="0.617" lift="1.5" drag="1.2"/>
+         camber="0.01">
+         <stall aoa="16" width="1" peak="1.5"/>
+         <flap1 start="0.02" end="0.57" lift="1.4" drag="1.1"/>
+         
          <control-input control="FLAP1" split="true" axis="/controls/flight/aileron"/>
          <control-input control="FLAP1" split="true" axis="/controls/flight/aileron-trim"/>        
+         
          <control-output control="FLAP1" prop="/surface-positions/left-aileron-pos-norm" side="left"/>
          <control-output control="FLAP1" prop="/surface-positions/right-aileron-pos-norm" side="right"/> 
+  </wing>  
+         
+  <hstab x="1.80" y="0.440" z="-0.313"
+         chord="0.722" 
+         length="2"
+         taper="0.68" 
+         dihedral="-5" 
+         sweep="3"
+         camber="0.05">
+         <stall aoa="16" width="1" peak="1.5" />
+         <flap0 start="0.055" end="0.946" lift="1.5" drag="1.3"/>       
+        
+         <control-input control="FLAP0" axis="/controls/flight/elevator" invert="true"/>
+         <control-input control="FLAP0" axis="/controls/flight/elevator-trim" invert="true"/>      *
+        
+         <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
   </hstab>
   
   <vstab x="-2.311" y="0" z="0.011" 
          chord="0.574" 
-         length="0.850"
+         length="0.9"
          taper="0.53"
          sweep="30">
-         <stall aoa="14" width="3" peak="1.5" />
-         <flap0  start="0" end="1"  lift="1.6" drag="1.2"/>
+         <stall aoa="14" width="1" peak="1.5" />
+         <flap0  start="0" end="0.75"  lift="1.3" drag="1.3"/>
+         
          <control-input control="FLAP0" axis="/controls/flight/rudder" invert="true"/>
          <control-input control="FLAP0" axis="/controls/flight/rudder-trim" invert="true"/>
+         
          <control-output prop="/surface-positions/rudder-pos-norm" control="FLAP0" min="1" max="-1"/>
   </vstab>
+  
+  <!-- Engines   source            : http://en.wikipedia.org/wiki/Revmaster_R-2100D
 
-  <!--
-       Engine    : Rotax 582 UL 65 HP at 6500 RPM
-       Propeller : Junkers SR 200A 1.450 m diameter
-       MTOM      : 1000 lbs
+                 name              : Revmaster R-2100D
+                 type              : Horizontally opposed piston engine
+                 power cruise      : 65 hp at 3200 rpm
+                 weight            :    590 kg ( 1320 lb   )
+                 displacement      : 2073 cc   (  816 in 3 )
   -->
   <propeller x="2.380" y="0" z="0.012"
-	     radius="0.725"
-	     mass="103"
-	     moment="2.2"
-           cruise-speed="124"
-	     cruise-rpm="2925"
-	     cruise-alt="6000" 
-	     cruise-power="53.6"
-	     takeoff-power="65"
-	     takeoff-rpm="3250"
-	     gear-ratio="0.5">
-	     <piston-engine eng-rpm="6500" 
-			    eng-power="65"
-			    displacement="35.44"
-			    compression="5.75"/>
+             mass="103"
+             radius="0.75"
+             moment="2.2"
+             cruise-speed="122"
+             cruise-power="53.6"
+             cruise-rpm="2925"
+             cruise-alt="6000" 
+             takeoff-power="65"
+             takeoff-rpm="3200">
              <actionpt x="2.830" y="0.0" z="0.012"/>
-    	     <control-input control="THROTTLE" axis="/controls/engines/engine[0]/throttle"/>
-    	     <control-input control="STARTER" axis="/controls/engines/engine[0]/starter"/>
-    	     <control-input control="MAGNETOS" axis="/controls/engines/engine[0]/magnetos"/>
-    	     <control-input control="MIXTURE" axis="/controls/engines/engine[0]/mixture"/>
+             <piston-engine eng-rpm="3200" 
+                            eng-power="65"
+                            displacement="816">
+                            <control-input control="THROTTLE" axis="/controls/engines/engine[0]/throttle"/>
+                            <control-input control="STARTER" axis="/controls/engines/engine[0]/starter"/>
+                            <control-input control="MAGNETOS" axis="/controls/engines/engine[0]/magnetos"/>
+                            <control-input control="MIXTURE" axis="/controls/engines/engine[0]/mixture"/>
+             </piston-engine>
   </propeller>
-
-<!-- Left wheel -->
-<gear x="1.505" y="2.452" z="-0.832" 
-      compression="0.1" 
-      spring="0.8" 
-      on-solid="1" >
-      <control-input axis="/controls/gear/brake-left" control="BRAKE" split="true"/>
-      <control-input axis="/controls/gear/brake-parking" control="BRAKE" split="true"/>
-</gear>
-
-<!-- Right wheel -->
-<gear x="1.505" y="-2.452" z="-0.832" 
-      compression="0.1" 
-      spring="0.8"
-      on-solid="1" >
-      <control-input axis="/controls/gear/brake-right" control="BRAKE" split="true"/>
-      <control-input axis="/controls/gear/brake-parking" control="BRAKE" split="true"/>
-</gear>
-
-<!-- Tail wheel -->
-<gear x="-2.963" y="0" z="-0.191" 
-      compression="0.15" 
-      spring="0.8"
-      on-solid="1"
-      sfric="1"
-      dfric="1">
-      <control-input axis="/controls/flight/rudder" control="STEER" square="true" src0="-1.0" src1="1.0" dst0="0.5" dst1="-0.5"/>
-</gear>
-
+  
+  <!-- Left wheel -->
+  <gear x="1.505" y="2.452" z="-0.832" 
+        compression="0.2" 
+        spring="0.6" 
+        dfric="0.8"
+        sfric ="0.6">
+        <control-input axis="/controls/gear/brake-left" control="BRAKE" split="true"/>
+        <control-input axis="/controls/gear/brake-parking" control="BRAKE" split="true"/>
+  </gear>
+  
+  <!-- Right wheel -->
+  <gear x="1.505" y="-2.452" z="-0.832" 
+        compression="0.2" 
+        spring="0.6" 
+        dfric="0.8"
+        sfric ="0.6">
+        <control-input axis="/controls/gear/brake-right" control="BRAKE" split="true"/>
+        <control-input axis="/controls/gear/brake-parking" control="BRAKE" split="true"/>
+  </gear>
+  
+  <!-- Tail wheel -->
+  <gear x="-2.963" y="0" z="-0.191" 
+        compression="0.15" 
+        spring="1" 
+        dfric="0.8"
+        sfric ="0.6">
+        <control-input axis="/controls/flight/rudder" control="STEER" square="true" src0="-1.0" src1="1.0" dst0="0.5" dst1="-0.5"/>
+  </gear>
+  
   <!-- Fuel -->
   <tank x="0.157" y="0" z="0" capacity="90"/>
   <tank x="1.524" y="0" z="0" capacity="30"/>
-
-  <!-- CG Theorique x=0.171 y=0 z=0.330 -->
-  <ballast x="2.5" y="0" z="-1" mass="150"/>
-
+  
+  <!-- Mass displacement -->
+  <ballast x="1.1" y="0" z="-0.4" mass="100"/>
+  
 </airplane>

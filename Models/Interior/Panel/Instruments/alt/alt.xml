@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -11,25 +11,19 @@
     <object-name>needle1000</object-name>
     <object-name>needle10000</object-name>
     <object-name>inhg</object-name>
-    <object-name>inhg.up</object-name>
-    <object-name>inhg.dn</object-name>
     <object-name>inhgknob</object-name>
 
     <object-name>vitre</object-name>
+    <object-name>inhg.up</object-name>
+    <object-name>inhg.dn</object-name>
   </animation>
 
-  <animation>
-    <type>noshadow</type>
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/Quickie/Models/Effects/Glass/glass</inherits-from>
     <object-name>vitre</object-name>
-  </animation>
-
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>glass.png</texture>
-    <object-name>vitre</object-name>
-  </animation>
-
+  </effect>
+  
   <animation>
     <type>material</type>
     <object-name>face</object-name>
@@ -40,12 +34,15 @@
     <object-name>inhg.up</object-name>
     <object-name>inhg.dn</object-name>
     <object-name>inhgknob</object-name>
+    <condition>
+      <property>controls/lighting/instrument-lights</property>
+      <property>/controls/electric/battery-switch</property>
+    </condition>
     <emission>
-      <red>   1.0 </red>
-      <green> 0.2 </green>
-      <blue>  0.0 </blue>
-      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
-      <factor-prop>/sim/model//material/instruments/factor</factor-prop>
+      <factor-prop>/controls/lighting/luminosite-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
     </emission>
   </animation>
 
@@ -57,8 +54,8 @@
   <animation>
     <type>rotate</type>
     <object-name>needle100</object-name>
-    <property>/instrumentation/altimeter/indicated-altitude-ft</property>
-    <factor>0.36</factor>
+    <property>instrumentation/altimeter/indicated-altitude-ft</property>
+    <factor> 0.36 </factor>
     <axis>
       <x> -1 </x>
       <y>  0 </y>
@@ -69,8 +66,8 @@
   <animation>
     <type>rotate</type>
     <object-name>needle1000</object-name>
-    <property>/instrumentation/altimeter/indicated-altitude-ft</property>
-    <factor>0.036</factor>
+    <property>instrumentation/altimeter/indicated-altitude-ft</property>
+    <factor> 0.036 </factor>
     <axis>
       <x> -1 </x>
       <y>  0 </y>
@@ -81,8 +78,8 @@
   <animation>
     <type>rotate</type>
     <object-name>needle10000</object-name>
-    <property>/instrumentation/altimeter/indicated-altitude-ft</property>
-    <factor>0.0036</factor>
+    <property>instrumentation/altimeter/indicated-altitude-ft</property>
+    <factor> 0.0036 </factor>
     <axis>
       <x> -1 </x>
       <y>  0 </y>
@@ -127,10 +124,10 @@
       <binding>
         <command>property-adjust</command>
         <property>instrumentation/altimeter/setting-inhg</property>
-        <step>-0.01</step>
-        <min>27.90</min>
-        <max>31.40</max>
-        <wrap>0</wrap>
+        <step> -0.01 </step>
+        <min>  27.90 </min>
+        <max>  31.40 </max>
+        <wrap>  0.00 </wrap>
       </binding>
     </action>
   </animation>
@@ -145,10 +142,10 @@
       <binding>
         <command>property-adjust</command>
         <property>instrumentation/altimeter/setting-inhg</property>
-        <step>-0.1</step>
-        <min>27.90</min>
-        <max>31.40</max>
-        <wrap>0</wrap>
+        <step> -0.10 </step>
+        <min>  27.90 </min>
+        <max>  31.40 </max>
+        <wrap>  0.00 </wrap>
       </binding>
     </action>
   </animation>
@@ -163,10 +160,10 @@
       <binding>
         <command>property-adjust</command>
         <property>instrumentation/altimeter/setting-inhg</property>
-        <step>0.01</step>
-        <min>27.90</min>
-        <max>31.40</max>
-        <wrap>0</wrap>
+        <step> 0.01 </step>
+        <min> 27.90 </min>
+        <max> 31.40 </max>
+        <wrap> 0.00 </wrap>
       </binding>
     </action>
   </animation>
@@ -181,13 +178,12 @@
       <binding>
         <command>property-adjust</command>
         <property>instrumentation/altimeter/setting-inhg</property>
-        <step>0.1</step>
-        <min>27.90</min>
-        <max>31.40</max>
-        <wrap>0</wrap>
+        <step> 0.10 </step>
+        <min> 27.90 </min>
+        <max> 31.40 </max>
+        <wrap> 0.00 </wrap>
       </binding>
     </action>
   </animation>
 
 </PropertyList>
-

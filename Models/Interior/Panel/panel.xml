@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -7,89 +7,268 @@
   <animation>
     <!-- Objets opaques -->
     <object-name>panel</object-name>
-
+    <object-name>panel2</object-name>
+    
     <!-- Objets transparents -->
   </animation>
 
-  <!-- asi -->
+  <animation>
+    <type>material</type>
+    <object-name>panel</object-name>
+    <condition>
+      <property>/controls/electric/battery-switch</property>
+    </condition>
+    <emission>
+      <factor-prop>controls/lighting/panel-dim</factor-prop>
+      <red>   0.8 </red>
+      <green> 0.4 </green>
+      <blue>  0.4 </blue>
+    </emission>
+  </animation>
+  
+  <!-- ASI -->
   <model>
     <path>Aircraft/Quickie/Models/Interior/Panel/Instruments/asi/asi.xml</path>
     <offsets>
-      <x-m>  0.136 </x-m>
+      <x-m>  0.001 </x-m>
       <y-m> -0.348 </y-m>
-      <z-m>  0.117 </z-m>
+      <z-m>  0.006 </z-m>
     </offsets>
   </model>
 
-  <!-- ai -->
+  <!-- AI -->
   <model>
     <path>Aircraft/Quickie/Models/Interior/Panel/Instruments/ai/ai.xml</path>
     <offsets>
-      <x-m>  0.129 </x-m>
+      <x-m> -0.001 </x-m>
       <y-m> -0.250 </y-m>
-      <z-m>  0.117 </z-m>
+      <z-m>  0.006 </z-m>
     </offsets>
   </model>
 
-  <!-- alt -->
+  <!-- ALT -->
   <model>
     <path>Aircraft/Quickie/Models/Interior/Panel/Instruments/alt/alt.xml</path>
     <offsets>
-      <x-m>  0.136 </x-m>
+      <x-m>  0.000 </x-m>
       <y-m> -0.150 </y-m>
-      <z-m>  0.117 </z-m>
+      <z-m>  0.006 </z-m>
     </offsets>
   </model>
 
-  <!-- ki206 -->
+  <!-- KI206 -->
   <model>
     <path>Aircraft/Quickie/Models/Interior/Panel/Instruments/ki206/ki206.xml</path>
     <offsets>
-      <x-m>  0.136 </x-m>
+      <x-m>  0.000 </x-m>
       <y-m> -0.057 </y-m>
-      <z-m>  0.117 </z-m>
+      <z-m>  0.006 </z-m>
     </offsets>
   </model>
 
-  <!-- rpm -->
+  <!-- TURN -->
   <model>
-    <path>Aircraft/Quickie/Models/Interior/Panel/Instruments/rpm/rpm.xml</path>
+    <path>Aircraft/Quickie/Models/Interior/Panel/Instruments/turn/turn.xml</path>
     <offsets>
-      <x-m>  0.136 </x-m>
+      <x-m> -0.005 </x-m>
       <y-m> -0.348 </y-m>
-      <z-m>  0.024 </z-m>
+      <z-m> -0.087 </z-m>
     </offsets>
   </model>
 
-  <!-- hdg -->
+  <!-- HDG -->
   <model>
     <path>Aircraft/Quickie/Models/Interior/Panel/Instruments/hdg/hdg.xml</path>
     <offsets>
-      <x-m>  0.136 </x-m>
+      <x-m>  0.000 </x-m>
       <y-m> -0.250 </y-m>
-      <z-m>  0.024 </z-m>
+      <z-m> -0.087 </z-m>
     </offsets>
   </model>
 
-  <!-- vsi -->
+  <!-- VSI -->
   <model>
     <path>Aircraft/Quickie/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
     <offsets>
-      <x-m>  0.136 </x-m>
+      <x-m>  0.000 </x-m>
       <y-m> -0.150 </y-m>
-      <z-m>  0.024 </z-m>
+      <z-m> -0.087 </z-m>
     </offsets>
   </model>
 
-  <!-- adf -->
+  <!-- ADF -->
   <model>
     <path>Aircraft/Quickie/Models/Interior/Panel/Instruments/adf/adf.xml</path>
     <offsets>
-      <x-m>  0.136 </x-m>
+      <x-m>  0.000 </x-m>
       <y-m> -0.057 </y-m>
-      <z-m>  0.024 </z-m>
+      <z-m> -0.087 </z-m>
     </offsets>
   </model>
 
+  <!-- KX165 -->
+  <model>
+    <path>Aircraft/Quickie/Models/Interior/Panel/Instruments/kx165/kx165.xml</path>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.180 </y-m>
+      <z-m> -0.070 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- KT67A -->
+  <model>
+    <path>Aircraft/Quickie/Models/Interior/Panel/Instruments/KT76A/KT76A.xml</path>
+    <offsets>
+      <x-m> -0.008 </x-m>
+      <y-m>  0.180 </y-m>
+      <z-m> -0.117 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- MAGNETOS -->
+  <model>
+    <path>Aircraft/Quickie/Models/Interior/Panel/Instruments/magneto/mags.xml</path>
+    <offsets>
+      <x-m>  0.016 </x-m>
+      <y-m> -0.032 </y-m>
+      <z-m> -0.161 </z-m>
+      <pitch-deg> -42 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <!-- AMPERMETER -->
+  <model>
+    <path>Aircraft/Quickie/Models/Interior/Panel/Instruments/engine/amps/amps.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.050 </y-m>
+      <z-m>  0.060 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- TACHIMETER -->
+  <model>
+    <path>Aircraft/Quickie/Models/Interior/Panel/Instruments/engine/tach/tach.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.120 </y-m>
+      <z-m>  0.060 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- OIL -->
+  <model>
+    <path>Aircraft/Quickie/Models/Interior/Panel/Instruments/engine/oil/oilp.xml</path>
+    <offsets>
+      <x-m> -0.001 </x-m>
+      <y-m>  0.190 </y-m>
+      <z-m>  0.060 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- FFLOW -->
+  <model>
+    <path>Aircraft/Quickie/Models/Interior/Panel/Instruments/engine/fflow/fflow.xml</path>
+    <offsets>
+      <x-m> -0.001 </x-m>
+      <y-m>  0.050 </y-m>
+      <z-m> -0.010 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- MANIFOLD -->
+  <model>
+    <path>Aircraft/Quickie/Models/Interior/Panel/Instruments/engine/man/man.xml</path>
+    <offsets>
+      <x-m> -0.001 </x-m>
+      <y-m>  0.120 </y-m>
+      <z-m> -0.010 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- FUEL TEMPERATURE -->
+  <model>
+    <path>Aircraft/Quickie/Models/Interior/Panel/Instruments/engine/fuel-temp/fuel-temp.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.190 </y-m>
+      <z-m> -0.010 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- FUEL -->
+  <model>
+    <path>Aircraft/Quickie/Models/Interior/Panel/Instruments/engine/fuel/fuel.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.270 </y-m>
+      <z-m> -0.010 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- SWITCHS -->
+  <model>
+    <path>Aircraft/Quickie/Models/Interior/Panel/Instruments/switchs/battery.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.070 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Quickie/Models/Interior/Panel/Instruments/switchs/alternator.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.100 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Quickie/Models/Interior/Panel/Instruments/switchs/instr-lights.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.020 </y-m>
+      <z-m> -0.070 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Quickie/Models/Interior/Panel/Instruments/switchs/nav-lights.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.040 </y-m>
+      <z-m> -0.070 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Quickie/Models/Interior/Panel/Instruments/switchs/strobe-lights.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.060 </y-m>
+      <z-m> -0.070 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Quickie/Models/Interior/Panel/Instruments/switchs/landing-lights.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.020 </y-m>
+      <z-m> -0.100 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Quickie/Models/Interior/Panel/Instruments/switchs/taxi-lights.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.040 </y-m>
+      <z-m> -0.100 </z-m>
+    </offsets>
+  </model>
+  
 </PropertyList>
-
